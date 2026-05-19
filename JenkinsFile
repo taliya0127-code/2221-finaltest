@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'maven'
+        maven 'Maven-3.9.9'
     }
 
     stages {
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                bat 'java -cp target\\2221-finaltest-1.0-SNAPSHOT.jar com.example.App'
+                bat 'java -cp target\\2221-finaltest-1.0-SNAPSHOT.jar com.usn.App'
             }
         }
     }
